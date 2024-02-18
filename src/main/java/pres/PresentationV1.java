@@ -8,8 +8,11 @@ import metier.MetierImpl;
 public class PresentationV1 {
     public static void main(String[] args) {
 
-        IDao dao = new DaoImpl();
-        IMetier metier = new MetierImpl(dao);
+        DaoImpl dao = new DaoImpl();
+        MetierImpl metier = new MetierImpl(dao);
+        // MetierImpl metier = new MetierImpl();
+        //   metier.setDao(dao);  //Injection via le setter
+
         System.out.println("Res=" + metier.calcul());
 
     }
