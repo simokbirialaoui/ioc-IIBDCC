@@ -2,6 +2,7 @@ package pres;
 
 import dao.DaoImpl;
 import dao.IDao;
+import ext.DaoImplV2;
 import metier.IMetier;
 import metier.MetierImpl;
 
